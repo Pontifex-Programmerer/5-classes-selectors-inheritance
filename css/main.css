@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+DE+Grund:wght@100..400&display=swap');
+
+* {
+    --red-accent-1: #FFCCCC;
+    --red-accent-2: #FCA6A6;
+    --red-accent-3: #D46A6A;
+    --red-accent-4: #AA3939;
+    --red-accent-5: #7D1313;
+
+    --brown-accent-1: #FFD1AA;
+    --brown-accent-2: #D49A6A;
+    --brown-accent-3: #AA6C39;
+    --brown-accent-4: #804515;
+    --brown-accent-5: #552700;
+
+    --teal-accent-1: #669999;
+    --teal-accent-2: #407F7F;
+    --teal-accent-3: #226666;
+    --teal-accent-4: #0D4D4D;
+    --teal-accent-5: #003333;
+
+    --green-accent-1: #88CC88;
+    --green-accent-2: #84CA84;
+    --green-accent-3: #55AA55;
+    --green-accent-4: #2D882D;
+    --green-accent-5: #0F640F;
+
+    --content-max-width: 65ch;
+}
+a[href="furballs@furballcompany.com"]{
+    color:var(--red-accent-1)
+}
+.about {
+    max-width: 120ch;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    padding: 1rem;
+    line-height: 1.5;
+    color: var(--teal-accent-5)
+}
+
+.about h1 {
+    letter-spacing: 4px;
+}
+
+body {
+    margin: 0;
+    background-color: var(--brown-accent-1);
+}
+
+.chapter {
+    color: var(--teal-accent-5);
+    line-height: 1.8;
+    font-size: 1.2em;
+    border-radius: 30px;
+    max-width: var(--content-max-width);
+    margin: 0 auto;
+    padding: 2ch 8ch;
+}
+
+.cursive {
+    font-style:italic;
+}
+
+.contact {
+    display: flex;
+}
+.contact h1 {
+    letter-spacing: 4px;
+}
+.contact input {
+    border-radius: 10px;
+    border-color: var(--teal-accent-1);
+    border-style: solid;
+    color: var(--teal-accent-3);
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+}
+.contact input:focus{
+    outline: 3px groove var(--teal-accent-1);
+}
+
+.contact input::placeholder {
+    color: var(--teal-accent-1)
+}
+
+.form-wrapper {
+    font-size: 1.5rem;
+    width: 100%;
+}
+.form-wrapper button {
+    background-color: var(--green-accent-3);
+    border: 5px solid var(--green-accent-5);
+    border-radius: 25px;
+    color: var(--green-accent-5);
+    font-size: 1.4rem;
+    margin: 0 auto;
+    font-weight: bold;
+    padding: 25px;
+    width: 25ch;
+}
+
+.form-wrapper button:hover {
+    background-color: var(--green-accent-1);
+    border-color: var(--brown-accent-1);
+    color: var(--teal-accent-5)
+}
+
+.form-wrapper form {
+    background-color: var(--brown-accent-5);
+    color: var(--brown-accent-1);
+    border: 2px solid;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+    width: 50%;
+    max-width: var(65ch);
+    padding: 20px;
+    text-align: center;
+}
+
+.furball-story {
+    background-image: url('../img/furball-background.webp');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 5rem;
+}
+
+.furball-story h1 {
+    text-align: center;
+}
+.image-text {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+}
+
+.image-text img{
+    border-radius: 30px;
+}
+
+.image-text > * {
+    max-width: 45%;
+    margin: 20px 1rem;
+    max-height: 25vh;
+}
+.label-input {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.label-input input {
+    font-size: inherit;
+    width: 30ch;
+}
+.logo {
+    height: 85%;
+}
+
+.logo img{
+    border-radius: 50%;
+    height: 100%;
+}
+.montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.navbar a[href*="index"] {
+    color: var(--teal-accent-4);
+    font-weight: bold;
+}
+
+.navbar {
+    align-items: center;
+    background-color: var(--green-accent-1);
+    display: flex;
+    font-size: 2rem;
+    height: 7vh;
+    justify-content: space-between;
+    padding: 0 2ch
+}
+
+.navbar ul {
+    display: flex;
+    font-size: 1.5rem;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul > * {
+    margin: 0 0.5rem;
+}
+
+.navbar a {
+    color: var(--teal-accent-5);
+    font-weight: 400;
+    text-decoration: none;
+}
+.our-email {
+    padding: 25px;
+}
+.playwrite{
+    font-family: "Playwrite DE Grund", cursive;
+    font-optical-sizing: auto;
+    font-style:italic;
+}
+.seperator {
+    border-width: 5px;
+    border-style:double;
+    border-color: var(--green-accent-1);
+    width: 50%;
+}
+.text-background {
+    background-color: var(--red-accent-1);
+}
+
+.weight-100 {
+    font-weight: 100;
+}
+
+.weight-200 {
+    font-weight: 200;
+}
+.weight-300 {
+    font-weight: 300;
+}
+.weight-400 {
+    font-weight: 400;
+}
+
