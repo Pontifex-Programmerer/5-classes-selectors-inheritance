@@ -16,8 +16,8 @@ jobs:
       - name: Copy code to server
         uses: appleboy/ssh-action@v0.1.4
         with:
-          host: your-server-ip
-          username: your-ssh-user
+          host: dev.ikt-fag.no
+          username: superpadde
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
           script: |
