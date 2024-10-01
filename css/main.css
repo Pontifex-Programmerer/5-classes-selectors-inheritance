@@ -283,6 +283,7 @@ body {
 
 @media (max-width: 800px){
     .statement {
+        margin-bottom: 4em;
         font-size: 4em;
     }
 }
