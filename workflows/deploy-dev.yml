@@ -1,0 +1,26 @@
+name: Deploy to Dev Server
+
+on:
+  push:
+    branches:
+      - solution
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        
+      - name: Copy code to server
+        uses: appleboy/ssh-action@v0.1.4
+        with:
+          host: your-server-ip
+          username: your-ssh-user
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: 22
+          script: |
+            cd /var/www/furries/
+            git pull origin solution
+            # Restart your services if needed, e.g., with systemctl or other means
