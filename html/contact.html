@@ -4,29 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Furball Co</title>
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
 </head>
 <body>
-    <nav class="navbar">
-        <span class="logo"><a href="../index.html">Home</a></span>
+    <nav class="navbar playwrite">
+        <span class="logo"><a href="../index.html"><img src="../img/logo.webp" alt=""></a></span>
         <ul>
             <li><a href="../index.html">Home</a></li>
             <li><a href="./about.html">about</a></li>
             <li><a href="#">contact</a></li>
         </ul>
     </nav>
-    <section>
-        <form action="#">
-            <h1>Buy a Furball!</h1>
-            <p>Whats life without a furball?</p>
-
-            <label for="customer-name">Your name:</label>
-            <input type="text" name="customer-name" id="customer-name" placeholder="your name">
-
-            <label for="customer-email">Your email:</label>
-            <input type="email" id="customer-email" placeholder="email@provider.com">
-            
-            <span class="our-email"><a href="furballs@furballcompany.com">furballs@furballcompany.com</a></span>
-            <button type="submit">Submit contact information</button>
+    
+    <section class="form-wrapper">
+        <form class="contact playwrite" action="#">
+            <h1 class="montserrat">Greetings!</h1>
+            <p >We would love to hear from you!</p>
+            <div class="label-input">
+                <label for="customer-name">Your name:</label>
+                <input type="text" name="customer-name" id="customer-name" placeholder="your name">
+            </div>
+            <div class="label-input">
+                <label for="customer-email">Your email:</label>
+                <input type="email" id="customer-email" placeholder="email@provider.com">
+            </div>
+                <span class="our-email"><a class="montserrat" href="furballs@furballcompany.com">furballs@furballcompany.com</a></span>
+            <button class="montserrat weight-400" type="submit">Submit</button>
         </form>
+    </section>
 </body>
 </html>
